@@ -1,0 +1,67 @@
+<!DOCTYPE html><html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Club Baobab - EFAD</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#inscription">Inscription</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#contact">Contact</a>
+    </nav><section id="accueil">
+    <h1>Bienvenue au Football Club Baobab - EFAD</h1>
+    <p>Le Football Club Baobab - EFAD est une académie de football dédiée à la formation des jeunes talents et au développement du sport à Saint-Louis.</p>
+    <p>Nous accueillons des jeunes de différentes catégories d’âge (U13, U15, U17) et leur offrons un encadrement de qualité.Fondée avec l’objectif de fournir un encadrement de qualité aux jeunes passionnés de football, notre école offre une formation technique, tactique et physique complète pour préparer les joueurs aux défis du football moderne. Grâce à des entraîneurs qualifiés et des infrastructures adaptées, nous veillons à offrir un cadre propice à l’apprentissage et à l’épanouissement de chaque joueur</p>
+    <p>Nous participons régulièrement à des tournois régionaux et nationaux, offrant ainsi à nos jeunes l’opportunité de mettre en pratique leurs acquis et d’être repérés par des clubs professionnels. Rejoindre le Football Club Baobab - EFAD, c’est faire partie d’une famille unie par la passion du football et l’envie de progresser ensemble.</p>
+</section>
+
+<section id="inscription">
+    <h2>Inscription</h2>
+    <form action="inscription.php" method="POST">
+        <div class="form-group">
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" required>
+        </div>
+        <div class="form-group">
+            <label for="age">Âge:</label>
+            <input type="number" id="age" name="age" required>
+        </div>
+        <div class="form-group">
+            <label for="categorie">Catégorie:</label>
+            <select id="categorie" name="categorie" required>
+                <option value="U13">U13</option>
+                <option value="U15">U15</option>
+                <option value="U17">U17</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="telephone">Téléphone:</label>
+            <input type="text" id="telephone" name="telephone" required>
+        </div>
+        <button type="submit">S'inscrire</button>
+    </form>
+</section>
+
+<section id="galerie">
+    <h2>Galerie</h2>
+    <p>Découvrez nos moments forts en images.</p>
+    <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
+    <div class="pa-gallery-player-widget" style="width:100%; height:480px; display:none;"
+        data-link="https://photos.app.goo.gl/GbxE7tcojtvtvUms8"
+        data-title="ÉCOLE DE FOOT BALL BAOBAB(EFAD)"
+        data-description="65 new items added to shared album">
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: contact@efadbaobab.com</p>
+    <p>Téléphone: +221 771678921</p>
+</section>
+
+
+</body>
+</html>
